@@ -15,8 +15,4 @@
 !includeurl FONTAWESOME/user_cog.puml
 !includeurl FONTAWESOME/user_tie.puml
 
-!if %variable_exists("RELATIVE_INCLUDE")
-  !include %get_variable_value("RELATIVE_INCLUDE")/EXTRA/siutoba.puml
-!else
-  !includeurl https://raw.githubusercontent.com/maurom/C4-PlantUML/master/EXTRA/siutoba.puml
-!endif
+!includeurl https://raw.githubusercontent.com/maurom/C4-PlantUML/master/EXTRA/siutoba.puml

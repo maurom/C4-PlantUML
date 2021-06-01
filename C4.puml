@@ -673,9 +673,4 @@ $from -[hidden]R- $to
 $from -[hidden]L- $to
 !endprocedure
 
-
-!if %variable_exists("RELATIVE_INCLUDE")
-  !include %get_variable_value("RELATIVE_INCLUDE")/C4_Common.puml
-!else
-  !includeurl https://raw.githubusercontent.com/maurom/C4-PlantUML/master/C4_Common.puml
-!endif
+!includeurl https://raw.githubusercontent.com/maurom/C4-PlantUML/master/C4_Common.puml
