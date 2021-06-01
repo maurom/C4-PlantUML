@@ -2,17 +2,21 @@
 !define FONTAWESOME https://raw.githubusercontent.com/tupadr3/plantuml-icon-font-sprites/master/font-awesome-5
 
 ' https://devicon.dev/
-!include DEVICONS/debian.puml
-!include DEVICONS/linux.puml
-!include DEVICONS/php.puml
-!include DEVICONS/postgresql.puml
+!includeurl DEVICONS/debian.puml
+!includeurl DEVICONS/linux.puml
+!includeurl DEVICONS/php.puml
+!includeurl DEVICONS/postgresql.puml
 
 ' https://fontawesome.com/v5.0/icons?d=gallery&q=user&m=free
-!include FONTAWESOME/server.puml
-!include FONTAWESOME/envelope.puml
-!include FONTAWESOME/users.puml
-!include FONTAWESOME/chalkboard_teacher.puml
-!include FONTAWESOME/user_cog.puml
-!include FONTAWESOME/user_tie.puml
+!includeurl FONTAWESOME/server.puml
+!includeurl FONTAWESOME/envelope.puml
+!includeurl FONTAWESOME/users.puml
+!includeurl FONTAWESOME/chalkboard_teacher.puml
+!includeurl FONTAWESOME/user_cog.puml
+!includeurl FONTAWESOME/user_tie.puml
 
-!include EXTRA/siutoba.puml
+!if %variable_exists("RELATIVE_INCLUDE")
+  !include %get_variable_value("RELATIVE_INCLUDE")/EXTRA/siutoba.puml
+!else
+  !includeurl https://raw.githubusercontent.com/maurom/C4-PlantUML/master/EXTRA/siutoba.puml
+!endif
