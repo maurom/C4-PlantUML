@@ -12,7 +12,7 @@ With the two macros `LAYOUT_TOP_DOWN()` and `LAYOUT_LEFT_RIGHT()` it is possible
 
 ```csharp
 @startuml LAYOUT_TOP_DOWN Sample
-!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
+!includeurl https://raw.githubusercontent.com/maurom/C4-PlantUML/master/C4_Container.puml
 
 /' Not needed because this is the default '/
 LAYOUT_TOP_DOWN()
@@ -35,7 +35,7 @@ Using `LAYOUT_LEFT_RIGHT()`
 
 ```csharp
 @startuml LAYOUT_LEFT_RIGHT Sample
-!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
+!includeurl https://raw.githubusercontent.com/maurom/C4-PlantUML/master/C4_Container.puml
 
 LAYOUT_LEFT_RIGHT()
 
@@ -63,7 +63,7 @@ This can be enabled with `LAYOUT_WITH_LEGEND()`.
 
 ```csharp
 @startuml LAYOUT_WITH_LEGEND Sample
-!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
+!includeurl https://raw.githubusercontent.com/maurom/C4-PlantUML/master/C4_Container.puml
 
 LAYOUT_WITH_LEGEND()
 
@@ -90,7 +90,7 @@ The calculated legend has following differences:
 
 ```csharp
 @startuml SHOW_LEGEND Sample
-!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
+!includeurl https://raw.githubusercontent.com/maurom/C4-PlantUML/master/C4_Container.puml
 
 Person(admin, "Administrator")
 System_Boundary(c1, 'Sample') {
@@ -123,7 +123,7 @@ With `LAYOUT_AS_SKETCH()` you can make a difference.
 
 ```csharp
 @startuml LAYOUT_AS_SKETCH Sample
-!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
+!includeurl https://raw.githubusercontent.com/maurom/C4-PlantUML/master/C4_Container.puml
 
 LAYOUT_AS_SKETCH()
 
@@ -148,7 +148,7 @@ This can be enabled with `HIDE_STEREOTYPE()`.
 
 ```csharp
 @startuml HIDE_STEREOTYPE Sample
-!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
+!includeurl https://raw.githubusercontent.com/maurom/C4-PlantUML/master/C4_Container.puml
 
 HIDE_STEREOTYPE()
 
@@ -178,7 +178,7 @@ With the macros `HIDE_PERSON_SPRITE()` and `SHOW_PERSON_SPRITE()` it is possible
 
 ```csharp
 @startuml predefined sprites Sample
-!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
+!includeurl https://raw.githubusercontent.com/maurom/C4-PlantUML/master/C4_Container.puml
 
 Person(userA, "User A", "with predefined sprite person", "person")
 Person(userB, "User B", "with predefined sprite person2", "person2")
@@ -192,7 +192,7 @@ Person(userB, "User B", "with predefined sprite person2", "person2")
 
 ```csharp
 @startuml HIDE_PERSON_SPRITE Sample
-!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
+!includeurl https://raw.githubusercontent.com/maurom/C4-PlantUML/master/C4_Container.puml
 
 HIDE_PERSON_SPRITE()
 
@@ -213,7 +213,7 @@ Rel(web_app, twitter, "Gets tweets from", "HTTPS")
 
 ```csharp
 @startuml SHOW_PERSON_SPRITE Sample
-!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
+!includeurl https://raw.githubusercontent.com/maurom/C4-PlantUML/master/C4_Container.puml
 
 /' Not needed because this is the default with sprite "person" '/
 SHOW_PERSON_SPRITE()
@@ -235,7 +235,7 @@ Rel(web_app, twitter, "Gets tweets from", "HTTPS")
 
 ```csharp
 @startuml SHOW_PERSON_SPRITE(sprite) Sample
-!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
+!includeurl https://raw.githubusercontent.com/maurom/C4-PlantUML/master/C4_Container.puml
 !define osaPuml https://raw.githubusercontent.com/Crashedmind/PlantUML-opensecurityarchitecture2-icons/master
 !include osaPuml/Common.puml
 !include osaPuml/User/all.puml

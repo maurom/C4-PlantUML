@@ -27,7 +27,7 @@ java -jar plantuml.jar -DRELATIVE_INCLUDE="."  ...
 If you want to use the always up-to-date version in this repo, use the following:
 
 ```csharp
-!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
+!includeurl https://raw.githubusercontent.com/maurom/C4-PlantUML/master/C4_Container.puml
 ```
 
 Now let's create a C4 Container diagram:
@@ -38,7 +38,7 @@ After you have included `C4_Container.puml` you can use the defined macro defini
 
 ```csharp
 @startuml C4_Elements
-!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
+!includeurl https://raw.githubusercontent.com/maurom/C4-PlantUML/master/C4_Container.puml
 
 Person(personAlias, "Label", "Optional Description")
 Container(containerAlias, "Label", "Technology", "Optional Description")
@@ -56,7 +56,7 @@ Take a look at the following sample of a C4 Container Diagram:
 
 ```csharp
 @startuml Basic Sample
-!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
+!includeurl https://raw.githubusercontent.com/maurom/C4-PlantUML/master/C4_Container.puml
 
 Person(admin, "Administrator")
 System_Boundary(c1, "Sample System") {
@@ -75,7 +75,7 @@ Entities can also be decorated with icons/sprites using the $sprite parameter, f
 
 ```csharp
 @startuml
-!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
+!includeurl https://raw.githubusercontent.com/maurom/C4-PlantUML/master/C4_Container.puml
 
 !define DEVICONS https://raw.githubusercontent.com/tupadr3/plantuml-icon-font-sprites/master/devicons
 !define FONTAWESOME https://raw.githubusercontent.com/tupadr3/plantuml-icon-font-sprites/master/font-awesome-5
@@ -103,7 +103,7 @@ Similar to icons/sprites is it possible to add links to all elements and relatio
 
 ```csharp
 @startuml Basic Sample
-!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
+!includeurl https://raw.githubusercontent.com/maurom/C4-PlantUML/master/C4_Container.puml
 
 Person(admin, "Administrator", $sprite="person2", $link="https://github.com/plantuml-stdlib/C4-PlantUML/blob/master/LayoutOptions.md#hide_person_sprite-or-show_person_spritesprite")
 System_Boundary(c1, "Sample System", $link="https://github.com/plantuml-stdlib/C4-PlantUML") {
@@ -126,7 +126,7 @@ Elements and relations can be decorated with tags and explained via a calculated
 
 ```csharp
 @startuml
-!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
+!includeurl https://raw.githubusercontent.com/maurom/C4-PlantUML/master/C4_Container.puml
 
 AddElementTag("v1.0", $borderColor="#d73027")
 AddElementTag("v1.1", $fontColor="#d73027")
@@ -161,7 +161,7 @@ SHOW_LEGEND()
 Diagram types 
 
 * System Context & System Landscape diagrams
-  * Import: `!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Context.puml`
+  * Import: `!includeurl https://raw.githubusercontent.com/maurom/C4-PlantUML/master/C4_Context.puml`
   * Macros: 
     * `Person(alias, label, ?description, ?sprite, ?tags, $link)`
     * `Person_Ext`
@@ -175,7 +175,7 @@ Diagram types
     * `Enterprise_Boundary(alias, label, ?tags, $link)`
     * `System_Boundary` 
 * Container diagram
-  * Import: `!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml`
+  * Import: `!includeurl https://raw.githubusercontent.com/maurom/C4-PlantUML/master/C4_Container.puml`
   * Additional Macros: 
     * `Container(alias, label, technology, ?description, ?sprite, ?tags, $link)`
     * `ContainerDb`
@@ -185,7 +185,7 @@ Diagram types
     * `ContainerQueue_Ext`
     * `Container_Boundary(alias, label, ?tags, $link)`
 * Component diagram
-  * Import: `!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Component.puml`
+  * Import: `!includeurl https://raw.githubusercontent.com/maurom/C4-PlantUML/master/C4_Component.puml`
   * Additional Macros: 
     * `Component(alias, label, technology, ?description, ?sprite, ?tags, $link)`
     * `ComponentDb`
@@ -194,7 +194,7 @@ Diagram types
     * `ComponentDb_Ext`
     * `ComponentQueue_Ext`
 * Dynamic diagram
-  * Import: `!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Dynamic.puml`
+  * Import: `!includeurl https://raw.githubusercontent.com/maurom/C4-PlantUML/master/C4_Dynamic.puml`
   * Additional Macros: 
     * `RelIndex(index, from, to, label, ?tags, $link)`
     * (lowercase) `increment($offset=1)`: increase current index (procedure which has no direct output)
@@ -206,7 +206,7 @@ Diagram types
     * `SetIndex($new_index)`: returns new set index and calculates next index (function which can be used as argument)
 
 * Deployment diagram
-  * Import: `!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Deployment.puml`
+  * Import: `!includeurl https://raw.githubusercontent.com/maurom/C4-PlantUML/master/C4_Deployment.puml`
   * Additional Macros: 
     * `Deployment_Node(alias, label, ?type, ?description, ?sprite, ?tags, $link)`
     * `Node(alias, label, ?type, ?description, ?sprite, ?tags, $link)`: short name of Deployment_Node()
@@ -232,7 +232,7 @@ Therefore if sprite argument starts with `&` an OpenIconic name can be used too 
 
 ```csharp
 @startuml
-!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Dynamic.puml
+!includeurl https://raw.githubusercontent.com/maurom/C4-PlantUML/master/C4_Dynamic.puml
 
 Person(user, "User1")
 Person(user2, "User2")
@@ -276,7 +276,7 @@ In following sample a person uses different systems, and group of persons which 
 
 ```csharp
 @startuml
-!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
+!includeurl https://raw.githubusercontent.com/maurom/C4-PlantUML/master/C4_Container.puml
 HIDE_STEREOTYPE()
 
 Person(a, "A")
@@ -351,7 +351,7 @@ Multiple tags can be combined with `+`, like `Container(api, "API", $tags="v1.0+
 
 ```csharp
 @startuml
-!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
+!includeurl https://raw.githubusercontent.com/maurom/C4-PlantUML/master/C4_Container.puml
 
 UpdateElementStyle(person, $fontColor="green")
 AddElementTag("v1.0", $fontColor="#d73027", $borderColor="#d73027")
@@ -395,7 +395,7 @@ If the custom (color) schema is defined via `UpdateElementStyle()` then the lege
 
 ```csharp
 @startuml
-!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Context.puml
+!includeurl https://raw.githubusercontent.com/maurom/C4-PlantUML/master/C4_Context.puml
 
 !$COLOR_A_5 = "#7f3b08"
 !$COLOR_A_4 = "#b35806"
@@ -449,7 +449,7 @@ Following sample uses all 3 different property definitions (and the aligned depl
 
 ```csharp
 @startuml
-!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Deployment.puml
+!includeurl https://raw.githubusercontent.com/maurom/C4-PlantUML/master/C4_Deployment.puml
 
 ' default header Property, Value
 AddProperty("Name", "Flash")
