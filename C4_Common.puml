@@ -1,0 +1,16 @@
+!define DEVICONS https://raw.githubusercontent.com/tupadr3/plantuml-icon-font-sprites/master/devicons2
+!define FONTAWESOME https://raw.githubusercontent.com/tupadr3/plantuml-icon-font-sprites/master/font-awesome-5
+
+' https://devicon.dev/
+!include DEVICONS/debian.puml
+!include DEVICONS/linux.puml
+!include DEVICONS/php.puml
+!include DEVICONS/postgresql.puml
+
+' https://fontawesome.com/v5.0/icons?d=gallery&q=user&m=free
+!include FONTAWESOME/server.puml
+!include FONTAWESOME/envelope.puml
+!include FONTAWESOME/users.puml
+!include FONTAWESOME/chalkboard_teacher.puml
+!include FONTAWESOME/user_cog.puml
+!include FONTAWESOME/user_tie.puml
