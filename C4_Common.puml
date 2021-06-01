@@ -14,3 +14,5 @@
 !include FONTAWESOME/chalkboard_teacher.puml
 !include FONTAWESOME/user_cog.puml
 !include FONTAWESOME/user_tie.puml
+
+!include EXTRA/siutoba.puml
