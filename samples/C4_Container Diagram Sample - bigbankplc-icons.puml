@@ -4,12 +4,12 @@
 !define FONTAWESOME https://raw.githubusercontent.com/tupadr3/plantuml-icon-font-sprites/master/font-awesome-5
 ' uncomment the following line and comment the first to use locally
 ' !include C4_Container.puml
-!include DEVICONS/angular.puml
-!include DEVICONS/dotnet.puml
-!include DEVICONS/java.puml
-!include DEVICONS/msql_server.puml
-!include FONTAWESOME/server.puml
-!include FONTAWESOME/envelope.puml
+!includeurl DEVICONS/angular.puml
+!includeurl DEVICONS/dotnet.puml
+!includeurl DEVICONS/java.puml
+!includeurl DEVICONS/msql_server.puml
+!includeurl FONTAWESOME/server.puml
+!includeurl FONTAWESOME/envelope.puml
 
 ' LAYOUT_TOP_DOWN()
 ' LAYOUT_AS_SKETCH()
